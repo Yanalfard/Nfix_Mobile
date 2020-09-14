@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="NfixMobile.View.DealDetails"
+             BackgroundColor="#171717">
+    <ContentPage.Content>
+        <StackLayout
+            Orientation="Vertical" Padding="20" VerticalOptions="StartAndExpand">
+            <Label Text="طلایی" HorizontalOptions="End" Style="{x:StaticResource header}"/>
+            <Label Text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک استاز طراحان گرافیک است"
+                   Style="{x:StaticResource lesser}"  HorizontalOptions="EndAndExpand"   />
+
+            <StackLayout HorizontalOptions="End" Orientation="Horizontal">
+                <Label Text="روز" VerticalOptions="End" Margin="0,0,0,12"/>
+                <Label FontSize="64" Text="30"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                <Label Text="لورم ایپسوم متن ساختگی"/>
+                <Label Text="•"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                <Label Text="لورلورم ایپسوم متن ساختگیمتن ساختگی"/>
+                <Label Text="•"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                <Label Text="لورم ایلورم ایپسوم متن ساختگیگی"/>
+                <Label Text="•"/>
+            </StackLayout>
+
+            <StackLayout
+                Margin="0,12,0,0"
+                Orientation="Horizontal" 
+                HorizontalOptions="End">
+                <Label Text="تومان"
+                       VerticalOptions="End"
+                       Style="{StaticResource lesser}"
+                       TextColor="{StaticResource Primary}"/>
+                <Label Text="96000"
+                       FontSize="32"
+                       TextColor="{StaticResource Primary}"/>
+            </StackLayout>
+
+            <Button x:Name="btnBuy" VerticalOptions="EndAndExpand"
+                    Style="{x:StaticResource Btn-Primary}" Margin="0,30,0,0" Text="خرید"/>
+            <Button x:Name="btnBack" Clicked="btnBack_Clicked" VerticalOptions="EndAndExpand"
+                    Style="{x:StaticResource Btn-Secondary}" Margin="0,12,0,0" Text="برگشت"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage    
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Class="NfixMobile.View.Success"
+    NavigationPage.HasNavigationBar="False"
+    xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+    BackgroundColor="#171717">
+
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="20" VerticalOptions="Center">
+            <Label Text="موفق" HorizontalOptions="End" Style="{x:StaticResource header}"/>
+            <Label HorizontalOptions="End" FlowDirection="RightToLeft" 
+                   Text="گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز"/>
+
+            <Label Text="پیشنهاد ها" HorizontalOptions="End" Style="{x:StaticResource header}"/>
+            <ScrollView Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal" Spacing="12" Margin="0,0,0,18">
+                    <StackLayout.Resources>
+                        <Style TargetType="Frame">
+                            <Setter Property="WidthRequest" Value="148" />
+                            <Setter Property="HeightRequest" Value="220" />
+                            <Setter Property="Padding" Value="12" />
+                        </Style>
+                        <Style TargetType="Label">
+                            <Setter Property="FontSize" Value="14" />
+                            <Setter Property="VerticalOptions" Value="End" />
+                        </Style>
+                    </StackLayout.Resources>
+                    <Frame>
+                        <StackLayout Orientation="Vertical" Spacing="10">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                                <Label Text="روز" TextColor="{StaticResource Primary}"
+                                        Margin="0,0,0,6"
+                               FontSize="15"/>
+                                <Label Text="30" TextColor="{StaticResource Primary}"
+                               FontSize="36" />
+                            </StackLayout>
+                            <Label>
+                                که روزنامه و مجله در ستون و سطرآنچنان که لازم است و روزنامه و مجله  که لازرای شرایط ف
+                            </Label>
+                            <Label Text="96000 تومان" TextColor="{StaticResource Primary}"/>
+
+                            <Button 
+                                Clicked="Button_Clicked"
+                                Text="خرید" HorizontalOptions="Center" VerticalOptions="EndAndExpand"
+                                    Style="{StaticResource Btn-Primary}"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame>
+                        <StackLayout Orientation="Vertical" Spacing="10">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                                <Label Text="روز" TextColor="{StaticResource Primary}"
+                                        Margin="0,0,0,6"
+                               FontSize="15"/>
+                                <Label Text="30" TextColor="{StaticResource Primary}"
+                               FontSize="36" />
+                            </StackLayout>
+                            <Label>
+                                که روزنامه و مجله در ستون و سطرآنچنان که لازم است و 
+                            </Label>
+                            <Label Text="96000 تومان" TextColor="{StaticResource Primary}"/>
+
+                            <Button
+                                Clicked="Button_Clicked" Text="خرید" HorizontalOptions="Center" VerticalOptions="EndAndExpand"
+                                    Style="{StaticResource Btn-Primary}"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame>
+                        <StackLayout Orientation="Vertical" Spacing="10">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                                <Label Text="روز" TextColor="{StaticResource Primary}"
+                                        Margin="0,0,0,6"
+                               FontSize="15"/>
+                                <Label Text="30" TextColor="{StaticResource Primary}"
+                               FontSize="36" />
+                            </StackLayout>
+                            <Label>
+                                که روزنامه و مجله در ستون و سطرآنچنان که لازم است و روزنامه و مجله  که لازرای شرایط ف
+                            </Label>
+                            <Label Text="96000 تومان" TextColor="{StaticResource Primary}"/>
+
+                            <Button
+                                Clicked="Button_Clicked" Text="خرید" HorizontalOptions="Center" VerticalOptions="EndAndExpand"
+                                    Style="{StaticResource Btn-Primary}"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+            
+            <Button x:Name="btnLater" Clicked="btnLater_Clicked"
+                    Style="{x:StaticResource Btn-Secondary}" Margin="0,18,0,0" Text="بعدا"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

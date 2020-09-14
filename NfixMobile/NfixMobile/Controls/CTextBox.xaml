@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:controls="clr-namespace:NfixMobile.Controls"
+             mc:Ignorable="d"
+             x:Class="NfixMobile.Controls.CTextBox"
+             MinimumHeightRequest="58"
+             HeightRequest="58"
+             >
+    <ContentView.Content>
+            <StackLayout Padding="0" Margin="0" Spacing="0">
+                <controls:FlatEntry 
+                    x:Name="TxtMain"
+                    Focused="TxtMain_Focused"
+                    Unfocused="TxtMain_Unfocused"
+                    VerticalOptions="StartAndExpand"
+                    HeightRequest="50"
+                    Margin="0,2,0,2"
+                    FontSize="18"
+                    TextColor="#fff" PlaceholderColor="#303030" Keyboard="Text"/>
+                <BoxView 
+                    x:Name="boxStripe"
+                    BackgroundColor="#303030"
+                    Margin="0"
+                    HeightRequest="4"
+                    />
+            </StackLayout>
+    </ContentView.Content>
+</ContentView>

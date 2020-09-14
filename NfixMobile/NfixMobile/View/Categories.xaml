@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:controls="clr-namespace:NfixMobile.Controls"
+             mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="NfixMobile.View.Categories"   BackgroundColor="#171717">
+    <ContentPage.Resources>
+        <Style TargetType="controls:CategoryBlock">
+            <Setter Property="Margin" Value="0,0,0,6" />
+        </Style>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Padding="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout 
+                Grid.Column="0"
+                x:Name="stackLeft">
+                    <controls:CategoryBlock/>
+                    <controls:CategoryBlock/>
+                    <controls:CategoryBlock/>
+                    <controls:CategoryBlock/>
+                    <controls:CategoryBlock/>
+                </StackLayout>
+                <StackLayout 
+                Grid.Column="1"
+                x:Name="stackRight">
+                    <controls:CategoryBlock/>
+                    <controls:CategoryBlock/>
+                    <controls:CategoryBlock/>
+                    <controls:CategoryBlock/>
+                    <controls:CategoryBlock/>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

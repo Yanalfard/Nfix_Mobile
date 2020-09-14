@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" BackgroundColor="#171717"
+             x:Class="NfixMobile.View.BlogView">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20">
+                <Image
+                    x:Name="imgMain"
+                    HorizontalOptions="FillAndExpand"
+                    Aspect="AspectFill"
+                    Source="https://picsum.photos/500"/>
+                <Frame Margin="0,8,0,0">
+                    <StackLayout>
+                        <Label x:Name="lblHeader" 
+                            Style="{StaticResource header}" Text="این یک وبلاگ می باشد"/>
+                        <Label x:Name="lblDescription" Text=" باشداین یک وبلاگ می باشداین یک وبلاگ می باشداین یک وبلاگ می باشداین یک وبلاگ می باشداین یک وبلاگ می باشد" />
+                        <Label x:Name="lblBody" Text="این یک وبلاگ می باشداین یک وبلاگ می باشداین یک وبلاگ می باشداین یک وبلاگ می باشداین یک وبلاگ می باشداین یک وبلاگ می باشداین یک وبلاگ می باشداین یک وبلاگ می باشداین یک وبلاگ می باشداین یک وبلاگ می باشداینین یک وبلاگ می باشد"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:view="clr-namespace:NfixMobile.View"
+             mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="NfixMobile.View.MainTabbedPage"
+             BackgroundColor="#171717">
+    <TabbedPage.Children>
+        <NavigationPage Title="فروشگاه" IconImageSource="Market.png">
+            <x:Arguments>
+                <view:Market/>
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="مقالات" IconImageSource="Blogs.png">
+            <x:Arguments>
+                <view:Blogs/>
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="خانه" IconImageSource="Home.png">
+            <x:Arguments>
+                <view:Home/>
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="دسته بندی ها" IconImageSource="Categories.png">
+            <x:Arguments>
+                <view:Categories/>
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="پروفایل" IconImageSource="Profile.png">
+            <x:Arguments>
+                <view:Profile/>
+            </x:Arguments>
+        </NavigationPage>
+    </TabbedPage.Children>
+</TabbedPage>

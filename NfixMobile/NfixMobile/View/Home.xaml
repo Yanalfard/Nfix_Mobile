@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="NfixMobile.View.Home"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" 
+             xmlns:controls="clr-namespace:NfixMobile.Controls"
+             BackgroundColor="#171717">
+
+    <ContentPage.Resources>
+        <Style TargetType="controls:VideoBlock">
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            <Setter Property="VerticalOptions" Value="Start" />
+            <Setter Property="HeightRequest" Value="200" />
+        </Style>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20" VerticalOptions="StartAndExpand">
+                <!--#region Search -->
+                <StackLayout Orientation="Horizontal">
+                    <Frame CornerRadius="180" Padding="8,2"
+                           BorderColor="#303030"
+                           Margin="0,16,0,16"
+                           VerticalOptions="Center"
+                           HorizontalOptions="FillAndExpand">
+                        <controls:FlatEntry x:Name="txtSearch"
+                                            Margin="0"
+                                            Placeholder="جستجو..."
+                                            HorizontalOptions="FillAndExpand"
+                                            WidthRequest="240"/>
+                    </Frame>
+                    <controls:PillButton
+                        x:Name="PillCall"
+                        IconSource="resource://NfixMobile.Resources.search.svg"
+                        PillBackground="#CF2C2C"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Center"
+                        Margin="4,0,0,0"
+                        WidthRequest="52"
+                        HeightRequest="52"/>
+
+                </StackLayout>
+                <!--#endregion-->
+                <!--#region Videos -->
+
+                <controls:VideoBlock 
+                    ThumbnailUrl="https://picsum.photos/300"
+                    VideoUrl="https://archive.org/download/BigBuckBunny_328/BigBuckBunny_512kb.mp4"/>
+                <controls:VideoBlock 
+                    ThumbnailUrl="https://picsum.photos/200"/>
+                
+                <!--#endregion-->
+
+                <controls:BlogBlock/>
+                <controls:BlogBlock/>
+
+                <controls:ProductBlock/>
+                <controls:ProductBlock/>
+
+                <ScrollView Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal">
+                        <controls:TutorBlock/>
+                        <controls:TutorBlock/>
+                        <controls:TutorBlock/>
+                    </StackLayout>
+                </ScrollView>
+                <ScrollView Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal" Margin="0,0,0,18">
+                        <StackLayout.Resources>
+                            <Style TargetType="Frame">
+                                <Setter Property="WidthRequest" Value="148" />
+                                <Setter Property="HeightRequest" Value="220" />
+                                <Setter Property="Padding" Value="12" />
+                            </Style>
+                            <Style TargetType="Label">
+                                <Setter Property="FontSize" Value="14" />
+                                <Setter Property="VerticalOptions" Value="End" />
+                            </Style>
+                        </StackLayout.Resources>
+                        <Frame>
+                            <StackLayout Orientation="Vertical" >
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                                    <Label Text="روز" TextColor="{StaticResource Primary}"
+                                        Margin="0,0,0,6"
+                               FontSize="15"/>
+                                    <Label Text="30" TextColor="{StaticResource Primary}"
+                               FontSize="36" />
+                                </StackLayout>
+                                <Label>
+                                    که روزنامه و مجله در ستون و سطرآنچنان که لازم است و روزنامه و مجله  که لازرای شرایط ف
+                                </Label>
+                                <Label Text="96000 تومان" TextColor="{StaticResource Primary}"/>
+
+                                <Button 
+                                Clicked="Button_Clicked"
+                                Text="خرید" HorizontalOptions="Center" VerticalOptions="EndAndExpand"
+                                    Style="{StaticResource Btn-Primary}"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame>
+                            <StackLayout Orientation="Vertical" >
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                                    <Label Text="روز" TextColor="{StaticResource Primary}"
+                                        Margin="0,0,0,6"
+                               FontSize="15"/>
+                                    <Label Text="30" TextColor="{StaticResource Primary}"
+                               FontSize="36" />
+                                </StackLayout>
+                                <Label>
+                                    که روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                </Label>
+                                <Label Text="96000 تومان" TextColor="{StaticResource Primary}"/>
+
+                                <Button
+                                Clicked="Button_Clicked" Text="خرید" HorizontalOptions="Center" VerticalOptions="EndAndExpand"
+                                    Style="{StaticResource Btn-Primary}"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame>
+                            <StackLayout Orientation="Vertical" >
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                                    <Label Text="روز" TextColor="{StaticResource Primary}"
+                                        Margin="0,0,0,6"
+                               FontSize="15"/>
+                                    <Label Text="30" TextColor="{StaticResource Primary}"
+                               FontSize="36" />
+                                </StackLayout>
+                                <Label>
+                                    که روزنامه و مجله در ستون و سطرآنچنان که لازم است و روزنامه و مجله  که لازرای شرایط ف
+                                </Label>
+                                <Label Text="96000 تومان" TextColor="{StaticResource Primary}"/>
+
+                                <Button
+                                Clicked="Button_Clicked" Text="خرید" HorizontalOptions="Center" VerticalOptions="EndAndExpand"
+                                    Style="{StaticResource Btn-Primary}"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

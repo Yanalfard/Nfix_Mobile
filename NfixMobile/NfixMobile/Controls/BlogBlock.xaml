@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="NfixMobile.Controls.BlogBlock">
+    <ContentView.Content>
+        <Frame Padding="0">
+            <StackLayout>
+                <Image 
+                    x:Name="imgThumbnail"
+                    Aspect="AspectFill"
+                    Source="https://picsum.photos/600"/>
+                <StackLayout Padding="16">
+                    <Label 
+                    x:Name="lblHeader"
+                    HorizontalOptions="EndAndExpand"
+                    Text="این یک وبلاگ می باشد"/>
+                    <Label 
+                    x:Name="lblDescription"
+                        Style="{StaticResource lesser}"
+                    HorizontalOptions="EndAndExpand"
+                    Text="این یک وبلاگ می باشد این یک وبلاگ می باشد این یک وبلاگ می باشد این یک وبلاگ می باشد این یک وبلاگ می باشد این یک وبلاگ می باشد"/>
+                    <Button 
+                        x:Name="btnMore"
+                        Clicked="btnMore_Clicked"
+                        Text="بیشتر"
+                        Margin="0,4,0,0"
+                        HorizontalOptions="End"
+                        Style="{StaticResource Btn-Primary}"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </ContentView.Content>
+</ContentView>

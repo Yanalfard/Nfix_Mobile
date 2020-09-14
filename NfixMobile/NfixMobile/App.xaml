@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:c="clr-namespace:NfixMobile.Controls"
+             x:Class="NfixMobile.App">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <Color x:Key="Primary">#CF2C2C</Color>
+            <Color x:Key="Text">#fff</Color>
+            <Color x:Key="Background">#171717</Color>
+        </ResourceDictionary>
+
+        <Style TargetType="Entry">
+            <Setter Property="FlowDirection" Value="RightToLeft" />
+            <Setter Property="TextColor" Value="{StaticResource Text}" />
+        </Style>
+
+        <Style TargetType="c:FlatEntry">
+            <Setter Property="FlowDirection" Value="RightToLeft" />
+            <Setter Property="TextColor" Value="{StaticResource Text}" />
+            <Setter Property="PlaceholderColor" Value="#575757" />
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource Text}" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FlowDirection" Value="RightToLeft" />
+        </Style>
+
+        <Style TargetType="Label" x:Key="lesser">
+            <Setter Property="FontSize" Value="17" />
+            <Setter Property="TextColor" Value="#D0D0D0" />
+        </Style>
+
+        <Style TargetType="Label" x:Key="header">
+            <Setter Property="FontSize" Value="32" />
+            <Setter Property="Margin" Value="0,0,0,12" />
+        </Style>
+
+        <Style TargetType="Frame">
+            <Setter Property="HasShadow" Value="True" />
+            <Setter Property="BackgroundColor" Value="#2C2C2C" />
+        </Style>
+        
+        <Style TargetType="ContentPage">
+            <Setter Property="BackgroundColor" Value="{StaticResource Background}" />
+        </Style>
+
+        <Style TargetType="StackLayout">
+            <Setter Property="BackgroundColor" Value="Transparent" />
+        </Style>
+
+        <Style TargetType="Button" x:Key="Btn-Primary">
+            <Setter Property="BackgroundColor" Value="{StaticResource Primary}"/>
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="TextColor" Value="{StaticResource Text}" />
+            <Setter Property="FontSize" Value="20" />
+        </Style>
+
+        <Style TargetType="Button" x:Key="Btn-Secondary">
+            <Setter Property="BackgroundColor" Value="#303030" />
+            <Setter Property="CornerRadius" Value="4" />
+            <Setter Property="TextColor" Value="{StaticResource Text}" />
+            <Setter Property="FontSize" Value="18" />
+        </Style>
+
+    </Application.Resources>
+</Application>

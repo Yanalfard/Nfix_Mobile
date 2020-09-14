@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             mc:Ignorable="d"
+             x:Class="NfixMobile.Controls.PillButton">
+    <ContentView.Content>
+        <Frame
+            x:Name="mainFrame"
+            Margin="0"
+            HasShadow="True"
+            BackgroundColor="{StaticResource Primary}"
+            CornerRadius="32"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            Padding="10"
+            HeightRequest="54"
+            WidthRequest="54">
+            <Frame.Resources>
+                <Style TargetType="Image">
+                    <Setter Property="Margin" Value="12"/>
+                </Style>
+            </Frame.Resources>
+            <!--<Image x:Name="img"
+             />-->
+            <ffimageloadingsvg:SvgCachedImage 
+                x:Name="img"/>
+        </Frame>
+    </ContentView.Content>
+</ContentView>

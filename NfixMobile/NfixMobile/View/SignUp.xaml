@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:controls="clr-namespace:NfixMobile.Controls"
+    NavigationPage.HasNavigationBar="False"
+    mc:Ignorable="d"
+    x:Class="NfixMobile.View.SignUp"
+    IconImageSource="Profile.png"
+    BackgroundColor="#171717">
+
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="20" VerticalOptions="Center">
+            <Label Text="ثبت نام" HorizontalOptions="End" Style="{x:StaticResource header}"/>
+            <Label Text="نام کاربری"   HorizontalOptions="EndAndExpand"   />
+            <controls:CTextBox 
+                 FlowDirection="RightToLeft" HorizontalOptions="FillAndExpand"
+                 x:Name="txtUsername"/>
+            <Label Text="گذرواژه" HorizontalOptions="EndAndExpand" Margin="0,15,0,0"/>
+            <controls:CTextBox
+                 FlowDirection="RightToLeft" HorizontalOptions="FillAndExpand"
+                 x:Name="txtPassword" IsPassword="True"/>
+            <Label Text="شماره تلفن"   HorizontalOptions="EndAndExpand" Margin="0,15,0,0"/>
+            <controls:CTextBox
+                 FlowDirection="RightToLeft" HorizontalOptions="FillAndExpand" 
+                 Keyboard="Telephone"
+                 x:Name="txtTell" IsPassword="True"/>
+
+            <Button x:Name="btnRegister" Clicked="btnRegister_Clicked"
+                    Style="{x:StaticResource Btn-Primary}" Margin="0,30,0,0" Text="ثبت نام"/>
+            <Button x:Name="btnLogin" Clicked="btnLogin_Clicked" 
+                    Style="{x:StaticResource Btn-Secondary}" Margin="0,12,0,0" Text="حساب دارم"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

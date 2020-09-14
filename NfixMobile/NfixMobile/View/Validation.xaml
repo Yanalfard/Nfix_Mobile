@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Class="NfixMobile.View.Validation"
+    xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" 
+    xmlns:control="clr-namespace:NfixMobile.Controls"
+    BackgroundColor="#171717">
+
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="20" VerticalOptions="Center">
+            <Label Text="احراز هویت" HorizontalOptions="End" Style="{x:StaticResource header}"/>
+            <Label HorizontalOptions="End" FlowDirection="RightToLeft" 
+                Text="گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز"/>
+            <Label Text="کد ارسال شده"   HorizontalOptions="EndAndExpand" Margin="0,15,0,0"/>
+            <control:CTextBox x:Name="txtTell" Keyboard="Telephone" HorizontalOptions="FillAndExpand"/>
+            <control:PillButton
+                x:Name="PillCall"
+                IconSource="resource://NfixMobile.Resources.refresh.svg"
+                PillBackground="#171717"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                Margin="0,0,0,20"
+                WidthRequest="42"
+                HeightRequest="42"/>
+            <!--<ffimageloadingsvg:SvgCachedImage 
+            WidthRequest="32"
+            HeightRequest="32"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            Margin="0,0,0,20"
+            Source="resource://NfixMobile.Resources.refresh.svg"/>-->
+            
+
+            <Button x:Name="btnValidate" Clicked="btnValidate_Clicked"
+                    Style="{x:StaticResource Btn-Primary}" Margin="0,30,0,0" Text="احراز"/>
+            <Button x:Name="btnBack" Clicked="btnBack_Clicked"
+                    Style="{x:StaticResource Btn-Secondary}" Margin="0,12,0,0" Text="بازگشت"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

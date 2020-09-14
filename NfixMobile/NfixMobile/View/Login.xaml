@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            NavigationPage.HasNavigationBar="False"
+    mc:Ignorable="d"
+    x:Class="NfixMobile.MainPage"
+    xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" xmlns:controls="clr-namespace:NfixMobile.Controls"
+    BackgroundColor="#171717">
+
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="20" VerticalOptions="Center">
+            <ffimageloadingsvg:SvgCachedImage 
+            WidthRequest="200"
+            HeightRequest="100"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            Margin="50,0,50,20"
+            Source="resource://NfixMobile.Resources.NFixLogo.svg"/>
+
+            <Label Text="نام کاربری" HorizontalOptions="EndAndExpand"   />
+            <controls:CTextBox
+                 FlowDirection="RightToLeft"
+                 x:Name="txtUsername"/>
+            <Label Text="گذرواژه"   HorizontalOptions="EndAndExpand" Margin="0,15,0,0"/>
+            <controls:CTextBox 
+                x:Name="txtPassword" 
+                FlowDirection="RightToLeft"
+                HorizontalOptions="FillAndExpand"
+                IsPassword="True" />
+            <StackLayout Orientation="Horizontal" Margin="0,15,0,0" HorizontalOptions="End">
+                <Label Text="مرا بخاطر بسپار"/>
+                <CheckBox x:Name="chRememberMe"/>
+            </StackLayout>
+            <Button 
+                x:Name="btnLogin" Style="{x:StaticResource Btn-Primary}"
+                Margin="0,30,0,0" Text="ورود" Clicked="btnLogin_Clicked"/>
+            <Button 
+                x:Name="btnRegister" Style="{x:StaticResource Btn-Secondary}"
+                Margin="0,12,0,0" Text="ثبت نام" Clicked="btnRegister_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

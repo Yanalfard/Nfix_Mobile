@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NfixMobile.Android", "NfixMobile\NfixMobile.Android\NfixMobile.Android.csproj", "{EACE6D7F-55F6-49F0-8DDC-D5BF18AF5EE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NfixMobile", "NfixMobile\NfixMobile\NfixMobile.csproj", "{A62F659A-20B8-48C4-9B03-EBBD922F434A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EACE6D7F-55F6-49F0-8DDC-D5BF18AF5EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EACE6D7F-55F6-49F0-8DDC-D5BF18AF5EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EACE6D7F-55F6-49F0-8DDC-D5BF18AF5EE7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EACE6D7F-55F6-49F0-8DDC-D5BF18AF5EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EACE6D7F-55F6-49F0-8DDC-D5BF18AF5EE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EACE6D7F-55F6-49F0-8DDC-D5BF18AF5EE7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A62F659A-20B8-48C4-9B03-EBBD922F434A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A62F659A-20B8-48C4-9B03-EBBD922F434A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A62F659A-20B8-48C4-9B03-EBBD922F434A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A62F659A-20B8-48C4-9B03-EBBD922F434A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A62F659A-20B8-48C4-9B03-EBBD922F434A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A62F659A-20B8-48C4-9B03-EBBD922F434A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {426FDEFB-C32E-4AAA-87D7-349095729870}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="NfixMobile.Controls.ProductBlock">
+    <ContentView.Content>
+        <Frame Padding="0">
+            <StackLayout>
+                <Image 
+                       x:Name="imgThumbnail"
+                       Aspect="AspectFill"
+                       Source="https://picsum.photos/600"/>
+                <StackLayout Padding="8,2,8,8">
+                    <Label 
+                        x:Name="lblTitle"
+                        HorizontalOptions="EndAndExpand"
+                        Text="اسلش ورزشی"/>
+                    <Grid Margin="0,4,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="1"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                       
+                        <StackLayout Grid.Column="0" HorizontalOptions="Center">
+                            <Label x:Name="lblDiscountPrice"
+                                   Text="20000" TextDecorations="Strikethrough"
+                                   VerticalOptions="CenterAndExpand"
+                                   Style="{StaticResource lesser}"/>
+                            <Label x:Name="lblPrice" Text="17900"
+                                   VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <BoxView 
+                            Grid.Column="1"
+                            BackgroundColor="#666" VerticalOptions="FillAndExpand" Margin="0,8"/>
+                        <Button 
+                            x:Name="btnBuy"
+                            VerticalOptions="Center"
+                            HorizontalOptions="End"
+                            Style="{StaticResource Btn-Primary}"
+                            Grid.Column="2"
+                            Clicked="btnBuy_Clicked"
+                            Text="خرید"/>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </ContentView.Content>
+</ContentView>
